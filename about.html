@@ -9,7 +9,6 @@
 <body>
     <aside class="sidebar">
         <div class="profile-section">
-            <!-- የጎንዮሽ ማውጫ (Sidebar) ፕሮፋይል ፎቶ -->
             <img src="profile.jpg" alt="Profile" onerror="this.src='https://via.placeholder.com/80'">
             <h2>Dev<span>Portfolio</span></h2>
         </div>
@@ -29,25 +28,50 @@
             <p>Who I am, what I do, and why I build</p>
         </section>
 
-        <div class="card main-bio-card">
-            <!-- በመሃል ላይ የሚታየው ትክክለኛው የፕሮፋይል ፎቶ -->
-            <img src="profile.jpg" alt="Profile" class="bio-avatar" onerror="this.src='https://via.placeholder.com/100'">
-            <div class="bio-info">
-                <h3>Chalachew Belay</h3>
-                <p class="subtitle">📍 3rd Year IT Student — Wolaita Sodo University, Ethiopia</p>
-                <p>I am a passionate Information Technology student fluent in both Amharic and English. I love turning real-world problems into working software — from full-stack web applications to mobile solutions.</p>
+        <!-- 3 Grid Cards Top Row -->
+        <div class="skills-grid">
+            <div class="card">
+                <h3>💻 What This Website Is About</h3>
+                <p style="margin-top: 10px; color: #475569; line-height: 1.6;">
+                    This portfolio showcases my academic journey, technical skills, and the projects I've built as a student developer focused on solving local challenges through technology.
+                </p>
+            </div>
+            <div class="card">
+                <h3>⚙️ What I Do</h3>
+                <p style="margin-top: 10px; color: #475569; line-height: 1.6;">
+                    I design and develop web applications, management systems, and Android mobile apps. I work across the full stack — from database design to frontend interfaces.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🌐 My Skills</h3>
+                <p style="margin-bottom: 10px; color: #475569; font-weight: 600;">Technologies I work with daily:</p>
+                <div class="badge-list">
+                    <span class="badge">PHP</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">MySQL</span>
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">Android</span>
+                    <span class="badge">C#</span>
+                </div>
             </div>
         </div>
 
-        <div class="grid-2">
-            <div class="card">
-                <h3>What This Website Is About</h3>
-                <p>This portfolio showcases my academic journey, technical skills, and the projects I've built as a student developer focused on creating impactful digital tools.</p>
-            </div>
-            <div class="card">
-                <h3>What I Do</h3>
-                <p>I design and develop web applications, management systems, and desktop/mobile applications across the full stack — from database architecture to user interfaces.</p>
-            </div>
+        <!-- My Mission Card Bottom Row -->
+        <div class="card" style="margin-top: 20px; text-align: center; padding: 40px 20px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #0f172a;">🎯 My Mission</h3>
+            <p style="max-width: 700px; margin: 0 auto; color: #475569; line-height: 1.6;">
+                To bridge the gap between global technology and local Ethiopian needs — building practical, accessible software solutions that empower communities, institutions, and individuals across Ethiopia and beyond.
+            </p>
+        </div>
+
+        <!-- Social / Action Buttons Row -->
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
+            <a href="contact.html" class="btn primary" style="text-decoration: none;">✉️ Email Me</a>
+            <a href="https://github.com/chacha-it-deve-2018" target="_blank" class="btn primary" style="text-decoration: none; background-color: #334155;">🐙 GitHub</a>
+            <a href="contact.html" class="btn primary" style="text-decoration: none; background-color: #0284c7;">✈️ Telegram</a>
+            <a href="contact.html" class="btn primary" style="text-decoration: none; background-color: #166534;">📋 Contact Page</a>
         </div>
     </main>
 </body>
