@@ -8,49 +8,54 @@
 body {
     background-color: #0f172a;
     color: #f8fafc;
-}
-
-.dashboard-container {
     display: flex;
     min-height: 100vh;
 }
 
+/* Sidebar Navigation */
 .sidebar {
     width: 260px;
     background-color: #1e293b;
     border-right: 1px solid #334155;
+    position: fixed;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.profile-section {
+.profile-area {
     padding: 30px 20px;
     text-align: center;
     border-bottom: 1px solid #334155;
 }
 
-.profile-img-placeholder {
+.profile-area img {
     width: 80px;
     height: 80px;
-    background: #3b82f6;
     border-radius: 50%;
+    object-fit: cover;
     margin: 0 auto 15px auto;
+    border: 2px solid #3b82f6;
 }
 
-.profile-section h2 {
+.logo-text {
     font-size: 1.2rem;
+    font-weight: bold;
     color: #ffffff;
 }
 
-.profile-section h2 span {
+.logo-text span {
     color: #38bdf8;
 }
 
 .nav-links {
+    list-style: none;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
     gap: 8px;
+    flex-grow: 1;
 }
 
 .nav-links a {
@@ -58,6 +63,7 @@ body {
     text-decoration: none;
     padding: 12px 16px;
     border-radius: 8px;
+    display: block;
     transition: all 0.3s ease;
     font-weight: 500;
 }
@@ -67,75 +73,107 @@ body {
     color: #ffffff;
 }
 
+/* Main Content Area */
 .main-content {
+    margin-left: 260px;
     flex: 1;
-    padding: 40px;
+    padding: 50px;
     overflow-y: auto;
 }
 
+.content-section {
+    padding: 60px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.section-sub {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-top: 20px;
+    min-height: 80vh;
 }
 
 .hero-text h1 {
     font-size: 2.8rem;
     margin: 15px 0;
     color: #ffffff;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #38bdf8;
 }
 
 .greeting {
     color: #38bdf8;
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
-.hero-text p {
+.bio-desc {
     color: #94a3b8;
     line-height: 1.6;
     margin-bottom: 25px;
     max-width: 600px;
 }
 
-.cta-buttons {
+.hero-btns {
     display: flex;
     gap: 15px;
 }
 
-.btn {
+.btn-primary, .btn-secondary {
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
+    display: inline-block;
 }
 
-.btn.primary {
+.btn-primary {
     background-color: #3b82f6;
     color: white;
 }
 
-.btn.primary:hover {
+.btn-primary:hover {
     background-color: #2563eb;
 }
 
-.btn.secondary {
-    background-color: #334155;
+.btn-secondary {
+    background-color: #1e293b;
+    border: 1px solid #334155;
     color: white;
 }
 
-.btn.secondary:hover {
-    background-color: #475569;
+.btn-secondary:hover {
+    background-color: #334155;
 }
 
-.code-card {
+/* Code Window */
+.hero-code {
+    width: 420px;
+}
+
+.code-window {
     background: #1e293b;
     border: 1px solid #334155;
     border-radius: 12px;
     padding: 20px;
-    width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .code-header {
@@ -155,37 +193,25 @@ body {
 .dot.green { background: #10b981; }
 
 pre code {
-    color: #38bdf8;
+    color: #cbd5e1;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
-.page-header {
-    margin-bottom: 30px;
-}
+.keyword { color: #f472b6; }
+.property { color: #38bdf8; }
+.string { color: #a3e635; }
 
-.page-header h2 {
-    font-size: 2rem;
-    color: white;
-}
-
-.page-header p {
-    color: #94a3b8;
-}
-
+/* Cards & Grids */
 .card {
     background: #1e293b;
     border: 1px solid #334155;
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 20px;
-}
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    color: #cbd5e1;
+    line-height: 1.6;
 }
 
 .skills-grid, .projects-grid {
@@ -210,28 +236,8 @@ pre code {
     font-weight: 500;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-    background: #0f172a;
-    border: 1px solid #334155;
-    padding: 12px;
-    border-radius: 8px;
-    color: white;
-    outline: none;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: #3b82f6;
-}
-
 footer {
-    margin-top: 60px;
+    padding: 40px 0;
     text-align: center;
     color: #64748b;
     font-size: 0.9rem;
