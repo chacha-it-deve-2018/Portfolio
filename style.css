@@ -57,7 +57,7 @@ body {
 .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .nav-links a {
@@ -68,7 +68,7 @@ body {
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     transition: background 0.2s;
 }
 
@@ -83,9 +83,10 @@ body {
     flex: 1;
     padding: 30px;
     width: calc(100% - 260px);
+    transition: margin 0.3s ease-in-out;
 }
 
-/* Top Navigation Bar with Back Button for Mobile/General */
+/* Top Navigation Bar with Menu Toggle & Back Button */
 .top-nav-bar {
     display: flex;
     justify-content: space-between;
@@ -97,7 +98,7 @@ body {
 .back-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background-color: #e2e8f0;
     color: #1e293b;
     padding: 8px 16px;
@@ -115,7 +116,7 @@ body {
 /* Mobile Menu Toggle Button (Hidden on Desktop) */
 .menu-toggle {
     display: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background: #047857;
     color: white;
     border: none;
