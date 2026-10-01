@@ -207,3 +207,32 @@ body {
     gap: 12px;
     color: #475569;
 }
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column !important;
+        display: flex !important;
+    }
+    
+    .sidebar {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        padding: 20px !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        padding: 15px !important;
+        width: 100% !important;
+    }
+
+    /* በስልክ ስክሪን ላይ ጽሁፎች እና የሂሮ ሰክሽን መጠኑ እንዲመጥን */
+    section {
+        padding: 25px 15px !important;
+    }
+
+    section h1 {
+        font-size: 1.8rem !important;
+    }
+}
