@@ -9,7 +9,6 @@
 <body>
     <aside class="sidebar">
         <div class="profile-section">
-            <!-- ትክክለኛው የፕሮፋይል ፎቶ ኮድ ተካቷል -->
             <img src="profile.jpg" alt="Profile" onerror="this.src='https://via.placeholder.com/80'">
             <h2>Dev<span>Portfolio</span></h2>
         </div>
@@ -26,30 +25,63 @@
     <main class="main-content">
         <section class="page-header">
             <h2>Featured Projects</h2>
-            <p>Web applications and management systems built during my IT studies</p>
+            <p>Web applications and management systems built to solve real local problems</p>
         </section>
 
+        <!-- Projects Grid Layout -->
         <div class="projects-grid">
-            <div class="card">
-                <h3>Staff Leave Management System</h3>
+            
+            <!-- Project 1: Ethio Online Market -->
+            <div class="card" style="position: relative;">
+                <div style="background-color: #dcfce7; color: #166534; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 10px;">✓ Completed & Live</div>
+                <h3>Ethio Online Market Platform</h3>
+                <p style="margin: 8px 0; color: #166534; font-weight: 600;">E-Commerce Web Platform</p>
+                <p>An e-commerce marketplace platform hosted online, designed to facilitate digital buying and selling solutions with a responsive user interface.</p>
+                <div class="badge-list" style="margin: 15px 0;">
+                    <span class="badge">PHP</span>
+                    <span class="badge">MySQL</span>
+                    <span class="badge">HTML/CSS</span>
+                    <span class="badge">JavaScript</span>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                    <a href="https://github.com/chacha-it-deve-2018/online-market-ethiopias-patform" target="_blank" class="btn primary" style="text-decoration: none; padding: 8px 15px; font-size: 0.85rem;">🐙 View Code</a>
+                    <a href="http://ethio-online-market.infinityfreeapp.com/index.php" target="_blank" class="btn primary" style="text-decoration: none; background-color: #166534; padding: 8px 15px; font-size: 0.85rem;">🌐 Live Demo</a>
+                </div>
+            </div>
+
+            <!-- Project 2: WSU Leave Systems -->
+            <div class="card" style="position: relative;">
+                <div style="background-color: #dbeafe; color: #1e40af; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 10px;">★ Featured System</div>
+                <h3>WSU Staff Leave Management System</h3>
                 <p style="margin: 8px 0; color: #166534; font-weight: 600;">Wolaita Sodo University Project</p>
-                <p>A web-based employee leave request and tracking platform built to streamline administration tasks and automate approvals.</p>
-                <div class="badge-list">
+                <p>A web-based employee leave request and tracking platform built to streamline administration tasks, manage staff records, and automate approvals.</p>
+                <div class="badge-list" style="margin: 15px 0;">
                     <span class="badge">PHP</span>
                     <span class="badge">MySQL</span>
                     <span class="badge">JavaScript</span>
                 </div>
-            </div>
-            <div class="card">
-                <h3>Ethio Online Market & Exam Portal</h3>
-                <p style="margin: 8px 0; color: #166534; font-weight: 600;">Web Platforms</p>
-                <p>An e-commerce marketplace platform hosted on InfinityFree alongside an interactive IT exit exam preparation web portal.</p>
-                <div class="badge-list">
-                    <span class="badge">HTML/CSS</span>
-                    <span class="badge">PHP</span>
-                    <span class="badge">MySQL</span>
+                <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                    <a href="https://github.com/chacha-it-deve-2018/WSU-Leave-Systems" target="_blank" class="btn primary" style="text-decoration: none; padding: 8px 15px; font-size: 0.85rem;">🐙 View Code</a>
+                    <a href="https://ethio-online-market.infinityfreeapp.com/wsu_leave_request" target="_blank" class="btn primary" style="text-decoration: none; background-color: #166534; padding: 8px 15px; font-size: 0.85rem;">🌐 Live Demo</a>
                 </div>
             </div>
+
+            <!-- Project 3: IT Student Exit Exam Portal -->
+            <div class="card" style="position: relative;">
+                <div style="background-color: #fef3c7; color: #92400e; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 10px;">💡 Academic Portal</div>
+                <h3>IT Student Exit Exam Portal</h3>
+                <p style="margin: 8px 0; color: #166534; font-weight: 600;">Interactive Web Portal</p>
+                <p>An interactive web portal built to help Information Technology students prepare for exit exams with structured resources and practice questions.</p>
+                <div class="badge-list" style="margin: 15px 0;">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                    <a href="http://ethio-online-market.infinityfreeapp.com/Exit_exam_for_it_student/" target="_blank" class="btn primary" style="text-decoration: none; background-color: #166534; padding: 8px 15px; font-size: 0.85rem;">🌐 Visit Portal</a>
+                </div>
+            </div>
+
         </div>
     </main>
 </body>
