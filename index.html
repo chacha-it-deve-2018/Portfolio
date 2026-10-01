@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Mobile Hamburger Menu Button -->
+    <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
         <div class="profile-section">
             <img src="profile.jpg" alt="Profile" onerror="this.src='https://via.placeholder.com/80'">
             <h2>Dev<span>Portfolio</span></h2>
         </div>
         <nav class="nav-links">
-            <a href="index.html" class="home-link active">Home</a>
-            <a href="about.html" class="about-link">About</a>
-            <a href="skills.html" class="skills-link">Skills</a>
-            <a href="projects.html" class="projects-link">Projects</a>
-            <a href="education.html" class="education-link">Education</a>
-            <a href="contact.html" class="contact-link">Contact</a>
+            <a href="index.html" class="home-link active">🏠 Home</a>
+            <a href="about.html" class="about-link">👤 About</a>
+            <a href="skills.html" class="skills-link">⚡ Skills</a>
+            <a href="projects.html" class="projects-link">📁 Projects</a>
+            <a href="education.html" class="education-link">🎓 Education</a>
+            <a href="contact.html" class="contact-link">✉️ Contact</a>
         </nav>
     </aside>
 
     <main class="main-content">
-        <!-- Button to open sidebar on mobile -->
-        <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+        <!-- Top Navigation Bar with Menu Toggle & Back Button -->
+        <div class="top-nav-bar">
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            <a href="index.html" class="back-btn">&larr; Back to Home</a>
+        </div>
 
         <!-- Hero Section -->
         <section style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 40px 20px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2); text-align: center;">
@@ -48,7 +51,7 @@
             <div class="card" style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                 <h3 style="color: #0f172a; margin-bottom: 10px;">🎓 Education</h3>
                 <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">Studying BSc in IT at Wolaita Sodo University. Focused on system analysis, programming, and networking.</p>
-                <a href="education.html" style="display: inline-block; margin-top: 15px; color: #0284c7; font-weight: 600; text-decoration: none;">Learn more &rarr;</a>
+                <a href="education.html" style="display: inline-click; margin-top: 15px; color: #0284c7; font-weight: 600; text-decoration: none;">Learn more &rarr;</a>
             </div>
             <div class="card" style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                 <h3 style="color: #0f172a; margin-bottom: 10px;">💻 Core Skills</h3>
