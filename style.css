@@ -66,6 +66,9 @@ body {
     padding: 12px 15px;
     border-radius: 8px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     transition: background 0.2s;
 }
 
@@ -82,15 +85,44 @@ body {
     width: calc(100% - 260px);
 }
 
+/* Top Navigation Bar with Back Button for Mobile/General */
+.top-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Back Button Style */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #cbd5e1;
+}
+
 /* Mobile Menu Toggle Button (Hidden on Desktop) */
 .menu-toggle {
     display: none;
-    font-size: 1.5rem;
-    background: none;
+    font-size: 1.2rem;
+    background: #047857;
+    color: white;
     border: none;
-    color: #047857;
+    padding: 8px 14px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* Responsive Design for Mobile */
@@ -114,6 +146,8 @@ body {
     }
 
     .menu-toggle {
-        display: block; /* በስልክ ላይ ብቻ እንዲታይ */
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
     }
 }
