@@ -6,60 +6,62 @@
 }
 
 body {
-    background-color: #0f172a;
-    color: #f8fafc;
+    background-color: #f8fafc;
+    color: #1e293b;
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar Navigation */
+/* Sidebar Navigation (Green Theme) */
 .sidebar {
     width: 260px;
-    background-color: #1e293b;
-    border-right: 1px solid #334155;
+    background-color: #166534; /* Dark Green */
+    border-right: 1px solid #14532d;
     position: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-top: 20px;
 }
 
-.profile-area {
-    padding: 30px 20px;
+.profile-section {
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #15803d;
+    margin-bottom: 15px;
 }
 
-.profile-area img {
+.profile-section img, .profile-img-placeholder {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 15px auto;
-    border: 2px solid #3b82f6;
+    border: 2px solid #ffffff;
+    background-color: #cbd5e1;
 }
 
-.logo-text {
-    font-size: 1.2rem;
+.profile-section h2 {
+    font-size: 1.3rem;
     font-weight: bold;
     color: #ffffff;
 }
 
-.logo-text span {
-    color: #38bdf8;
+.profile-section h2 span {
+    color: #86efac;
 }
 
 .nav-links {
     list-style: none;
-    padding: 20px 10px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex-grow: 1;
 }
 
 .nav-links a {
-    color: #94a3b8;
+    color: #dcfce7;
     text-decoration: none;
     padding: 12px 16px;
     border-radius: 8px;
@@ -69,7 +71,7 @@ body {
 }
 
 .nav-links a:hover, .nav-links a.active {
-    background-color: #3b82f6;
+    background-color: #14532d;
     color: #ffffff;
 }
 
@@ -81,140 +83,32 @@ body {
     overflow-y: auto;
 }
 
-.content-section {
-    padding: 60px 0;
-    border-bottom: 1px solid #1e293b;
+.page-header {
+    margin-bottom: 30px;
 }
 
-.content-section h2 {
+.page-header h2 {
     font-size: 2.2rem;
-    color: white;
+    color: #0f172a;
     margin-bottom: 5px;
 }
 
-.section-sub {
-    color: #94a3b8;
-    margin-bottom: 25px;
+.page-header p {
+    color: #64748b;
 }
-
-/* Hero Section */
-.hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    min-height: 80vh;
-}
-
-.hero-text h1 {
-    font-size: 2.8rem;
-    margin: 15px 0;
-    color: #ffffff;
-    line-height: 1.2;
-}
-
-.hero-text h1 span {
-    color: #38bdf8;
-}
-
-.greeting {
-    color: #38bdf8;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.bio-desc {
-    color: #94a3b8;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    max-width: 600px;
-}
-
-.hero-btns {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: #3b82f6;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #2563eb;
-}
-
-.btn-secondary {
-    background-color: #1e293b;
-    border: 1px solid #334155;
-    color: white;
-}
-
-.btn-secondary:hover {
-    background-color: #334155;
-}
-
-/* Code Window */
-.hero-code {
-    width: 420px;
-}
-
-.code-window {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.code-header {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.dot.red { background: #ef4444; }
-.dot.yellow { background: #f59e0b; }
-.dot.green { background: #10b981; }
-
-pre code {
-    color: #cbd5e1;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.keyword { color: #f472b6; }
-.property { color: #38bdf8; }
-.string { color: #a3e635; }
 
 /* Cards & Grids */
 .card {
-    background: #1e293b;
-    border: 1px solid #334155;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 20px;
-    color: #cbd5e1;
-    line-height: 1.6;
+    color: #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.skills-grid, .projects-grid {
+.skills-grid, .projects-grid, .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -228,17 +122,76 @@ pre code {
 }
 
 .badge {
-    background: #334155;
-    color: #38bdf8;
+    background: #f1f5f9;
+    color: #166534;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
 }
 
-footer {
-    padding: 40px 0;
-    text-align: center;
-    color: #64748b;
-    font-size: 0.9rem;
+/* Main Bio Card (About Page) */
+.main-bio-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.bio-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    flex-shrink: 0;
+}
+
+.bio-info h3 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.bio-info .subtitle {
+    color: #166534;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #166534;
+}
+
+.btn.primary {
+    background-color: #166534;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.primary:hover {
+    background-color: #14532d;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #475569;
 }
