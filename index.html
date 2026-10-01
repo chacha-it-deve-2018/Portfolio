@@ -11,12 +11,12 @@
   <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <div class="profile-area">
-      <!-- ፎቶዎ ካለ ፎቶውን ስም እዚህ ጋር ያስገቡ (ለምሳሌ photo.jpg) -->
+      <!-- የፕሮፋይል ፎቶዎ ፋይል ስም profile.jpg መሆኑን ያረጋግጡ -->
       <img src="profile.jpg" alt="Profile photo" onerror="this.src='https://via.placeholder.com/80'">
       <div class="logo-text">Dev<span>Portfolio</span></div>
     </div>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -28,7 +28,7 @@
   <main class="main-content">
     
     <!-- Home Section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
       <div class="hero-text">
         <p class="greeting">👋 Hello, I'm</p>
         <h1>Full-Stack IT Student<br><span>& Software Developer</span></h1>
@@ -61,6 +61,68 @@
   <span class="property">goal</span>: <span class="string">"Build useful software solutions"</span>
 };</code></pre>
         </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p class="section-sub">Who I am, what I do, and why I build</p>
+      <div class="card">
+        <p>I am a passionate Information Technology student fluent in both Amharic and English. I love turning real-world problems into working software — from full-stack web applications to mobile software solutions.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+      <h2>Core Technical Skills</h2>
+      <p class="section-sub">Technologies and tools I work with</p>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <div class="badge-list">
+            <span class="badge">PHP</span>
+            <span class="badge">Java</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">C#</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Web & Database</h3>
+          <div class="badge-list">
+            <span class="badge">HTML/CSS</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">XAMPP</span>
+            <span class="badge">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <h2>Featured Projects</h2>
+      <p class="section-sub">Management systems built to solve real local problems</p>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Staff Leave Management System</h3>
+          <p>Wolaita Sodo University Project built with PHP, MySQL, and JavaScript for automated employee leave tracking.</p>
+        </div>
+        <div class="card">
+          <h3>Ethio Online Market & Exam Portal</h3>
+          <p>E-commerce platform hosted on InfinityFree and IT exit exam preparation web portal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2>Get In Touch</h2>
+      <p class="section-sub">Let's connect for collaborations, internships, or tech projects</p>
+      <div class="card">
+        <p><strong>University:</strong> Wolaita Sodo University, Ethiopia</p>
+        <p><strong>GitHub:</strong> github.com/chacha-it-deve-2018</p>
       </div>
     </section>
 
