@@ -27,7 +27,7 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            border-top: 5px solid #047857; /* ከድረ-ገጽህ አረንጓዴ ከለር ጋር እንዲጣጣም */
+            border-top: 5px solid #047857;
         }
         .form-group {
             margin-bottom: 20px;
@@ -54,7 +54,7 @@
             box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
         }
         .submit-btn {
-            background-color: #047857; /* አረንጓዴ ከለር */
+            background-color: #047857;
             color: white;
             border: none;
             width: 100%;
@@ -66,37 +66,42 @@
             transition: background 0.3s ease;
         }
         .submit-btn:hover {
-            background-color: #065f46; /* ሲነኩት የሚጠቁር አረንጓዴ */
+            background-color: #065f46;
         }
     </style>
 </head>
 <body>
-    <aside class="sidebar">
+    <!-- Sidebar Navigation with Emojis -->
+    <aside class="sidebar" id="sidebar">
         <div class="profile-section">
             <img src="profile.jpg" alt="Profile" onerror="this.src='https://via.placeholder.com/80'">
             <h2>Dev<span>Portfolio</span></h2>
         </div>
         <nav class="nav-links">
-            <a href="index.html" class="home-link">Home</a>
-            <a href="about.html" class="about-link">About</a>
-            <a href="skills.html" class="skills-link">Skills</a>
-            <a href="projects.html" class="projects-link">Projects</a>
-            <a href="education.html" class="education-link">Education</a>
-            <a href="contact.html" class="contact-link active">Contact</a>
+            <a href="index.html" class="home-link">🏠 Home</a>
+            <a href="about.html" class="about-link">👤 About</a>
+            <a href="skills.html" class="skills-link">⚡ Skills</a>
+            <a href="projects.html" class="projects-link">📁 Projects</a>
+            <a href="education.html" class="education-link">🎓 Education</a>
+            <a href="contact.html" class="contact-link active">✉️ Contact</a>
         </nav>
     </aside>
 
     <main class="main-content">
-        <!-- ርዕሱ ወደ መሃል (Center) እንዲሆን ተደርጓል -->
+        <!-- Top Navigation Bar for Mobile Menu & Back Button -->
+        <div class="top-nav-bar">
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            <a href="index.html" class="back-btn">&larr; Back to Home</a>
+        </div>
+
         <section class="page-header">
             <h2>Get in Touch</h2>
             <p>Have a question or want to work together? Send me a message!</p>
         </section>
 
-        <!-- Contact Form Card with Green Theme -->
+        <!-- Contact Form Card -->
         <div class="contact-card">
             <form action="https://formspree.io/f/xljdkzbj" method="POST">
-                
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -118,5 +123,15 @@
             </form>
         </div>
     </main>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
