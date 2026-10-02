@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education | Chalachew Belay</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Colorful & Modern Education Page Styling */
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        .page-header h2 {
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .projects-grid .card:nth-child(1) { border-top-color: #3b82f6; }
+        .projects-grid .card:nth-child(2) { border-top-color: #10b981; }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .badge {
+            background: #eef2ff;
+            color: #4f46e5;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 6px;
+            transition: all 0.2s ease;
+        }
+        .badge:hover {
+            background: #4f46e5;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar Navigation with Emojis -->
@@ -30,24 +73,24 @@
             <a href="index.html" class="back-btn">&larr; Back to Home</a>
         </div>
 
-        <section class="page-header">
-            <h2>Education Background</h2>
-            <p>My academic journey, schools, and professional training</p>
+        <section class="page-header" style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Education Background</h2>
+            <p style="color: #64748b; font-size: 1.1rem;">My academic journey, schools, and professional training</p>
         </section>
 
         <!-- Education Grid Layout -->
         <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
             
             <!-- University Education -->
-            <div class="card" style="position: relative;">
-                <div style="background-color: #dbeafe; color: #1e40af; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 10px;">🎓 Higher Education</div>
-                <h3>Wolaita Sodo University</h3>
-                <p style="margin: 8px 0; color: #166534; font-weight: 600;">BSc in Information Technology (IT)</p>
+            <div class="card">
+                <div style="background-color: #dbeafe; color: #1e40af; padding: 5px 12px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 12px;">🎓 Higher Education</div>
+                <h3 style="color: #1e293b; font-size: 1.3rem; margin-bottom: 5px;">Wolaita Sodo University</h3>
+                <p style="margin: 0 0 8px 0; color: #1e40af; font-weight: 600;">BSc in Information Technology (IT)</p>
                 <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">📍 Wolaita Sodo, Ethiopia | 3rd Year Student</p>
-                <p style="color: #475569; line-height: 1.6;">
+                <p style="color: #475569; line-height: 1.7; margin-bottom: 20px;">
                     Currently pursuing my Bachelor of Science degree in Information Technology. Focused on software engineering, database management systems, web development, and mobile app programming.
                 </p>
-                <div class="badge-list" style="margin-top: 20px;">
+                <div class="badge-list">
                     <span class="badge">Software Engineering</span>
                     <span class="badge">Networking</span>
                     <span class="badge">Web Development</span>
@@ -56,15 +99,15 @@
             </div>
 
             <!-- High School Education -->
-            <div class="card" style="position: relative;">
-                <div style="background-color: #dcfce7; color: #166534; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 10px;">🏫 Secondary Education</div>
-                <h3>Motta High School</h3>
-                <p style="margin: 8px 0; color: #166534; font-weight: 600;">Secondary & Preparatory School</p>
+            <div class="card">
+                <div style="background-color: #dcfce7; color: #166534; padding: 5px 12px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 12px;">🏫 Secondary Education</div>
+                <h3 style="color: #1e293b; font-size: 1.3rem; margin-bottom: 5px;">Motta High School</h3>
+                <p style="margin: 0 0 8px 0; color: #166534; font-weight: 600;">Secondary & Preparatory School</p>
                 <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">📍 Motta, East Gojjam, Amhara Region, Ethiopia</p>
-                <p style="color: #475569; line-height: 1.6;">
+                <p style="color: #475569; line-height: 1.7; margin-bottom: 20px;">
                     Completed my high school and preparatory education in Motta town. Built a strong foundation in natural sciences and analytical thinking before joining university.
                 </p>
-                <div class="badge-list" style="margin-top: 20px;">
+                <div class="badge-list">
                     <span class="badge">Natural Sciences</span>
                     <span class="badge">Mathematics</span>
                     <span class="badge">Academic Excellence</span>
@@ -74,9 +117,9 @@
         </div>
 
         <!-- Additional Academic Focus / Certifications Card -->
-        <div class="card" style="margin-top: 25px;">
-            <h3 style="margin-bottom: 15px; color: #0f172a;">💡 Academic Focus & Goals</h3>
-            <p style="color: #475569; line-height: 1.6;">
+        <div class="card" style="margin-top: 25px; margin-bottom: 40px; padding: 30px;">
+            <h3 style="margin-bottom: 15px; color: #0f172a; font-size: 1.2rem;">💡 Academic Focus & Goals</h3>
+            <p style="color: #475569; line-height: 1.7;">
                 My academic background combines rigorous theoretical concepts learned at Wolaita Sodo University with hands-on practical software development projects, aiming to solve real-world problems in Ethiopia through reliable tech solutions.
             </p>
         </div>
