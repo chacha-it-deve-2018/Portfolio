@@ -32,6 +32,21 @@
             transform: translateY(-5px);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
+        .edu-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .edu-logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e2e8f0;
+            background: #f1f5f9;
+            padding: 3px;
+        }
         .badge {
             background: #eef2ff;
             color: #4f46e5;
@@ -84,8 +99,15 @@
             <!-- University Education -->
             <div class="card">
                 <div style="background-color: #dbeafe; color: #1e40af; padding: 5px 12px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 12px;">🎓 Higher Education</div>
-                <h3 style="color: #1e293b; font-size: 1.3rem; margin-bottom: 5px;">Wolaita Sodo University</h3>
-                <p style="margin: 0 0 8px 0; color: #1e40af; font-weight: 600;">BSc in Information Technology (IT)</p>
+                
+                <div class="edu-header">
+                    <img src="wsu_logo.png" alt="WSU Logo" class="edu-logo" onerror="this.src='https://via.placeholder.com/55?text=WSU'">
+                    <div>
+                        <h3 style="color: #1e293b; font-size: 1.25rem; margin-bottom: 2px;">Wolaita Sodo University</h3>
+                        <p style="margin: 0; color: #1e40af; font-weight: 600; font-size: 0.95rem;">BSc in Information Technology (IT)</p>
+                    </div>
+                </div>
+
                 <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">📍 Wolaita Sodo, Ethiopia | 3rd Year Student</p>
                 <p style="color: #475569; line-height: 1.7; margin-bottom: 20px;">
                     Currently pursuing my Bachelor of Science degree in Information Technology. Focused on software engineering, database management systems, web development, and mobile app programming.
@@ -101,8 +123,15 @@
             <!-- High School Education -->
             <div class="card">
                 <div style="background-color: #dcfce7; color: #166534; padding: 5px 12px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; display: inline-block; margin-bottom: 12px;">🏫 Secondary Education</div>
-                <h3 style="color: #1e293b; font-size: 1.3rem; margin-bottom: 5px;">Motta High School</h3>
-                <p style="margin: 0 0 8px 0; color: #166534; font-weight: 600;">Secondary & Preparatory School</p>
+                
+                <div class="edu-header">
+                    <img src="motta_logo.png" alt="Motta School Logo" class="edu-logo" onerror="this.src='https://via.placeholder.com/55?text=School'">
+                    <div>
+                        <h3 style="color: #1e293b; font-size: 1.25rem; margin-bottom: 2px;">Motta High School</h3>
+                        <p style="margin: 0; color: #166534; font-weight: 600; font-size: 0.95rem;">Secondary & Preparatory School</p>
+                    </div>
+                </div>
+
                 <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">📍 Motta, East Gojjam, Amhara Region, Ethiopia</p>
                 <p style="color: #475569; line-height: 1.7; margin-bottom: 20px;">
                     Completed my high school and preparatory education in Motta town. Built a strong foundation in natural sciences and analytical thinking before joining university.
