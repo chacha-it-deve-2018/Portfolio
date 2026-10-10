@@ -101,16 +101,37 @@
             color: #065f46;
             text-decoration: underline;
         }
-        .security-tip {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 12px 18px;
+        
+        /* Security Warning Visual Guide Styling */
+        .security-guide {
+            background: #fffbebf8;
+            border: 2px dashed #f59e0b;
+            padding: 20px;
             margin-bottom: 25px;
-            border-radius: 8px;
-            text-align: left;
+            border-radius: 12px;
+            color: #78350f;
+        }
+        .steps-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .step-pill {
+            background: #ffffff;
+            border: 1px solid #fcd34d;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
             color: #92400e;
-            font-size: 0.9rem;
-            line-height: 1.5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .step-arrow {
+            color: #d97706;
+            font-size: 1.4rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -154,9 +175,18 @@
             </div>
         </section>
 
-        <!-- Security Warning Bypass Tip for Visitors -->
-        <div class="security-tip">
-            <strong>💡 Note for Visitors:</strong> If a security warning (Dangerous site) appears when opening the live project demo links, simply click <strong>"Details"</strong> and then select <strong>"Visit this unsafe site"</strong> to proceed safely to the application.
+        <!-- Visual Step-by-Step Security Warning Guide -->
+        <div class="security-guide" style="text-align: center;">
+            <h3 style="margin-top: 0; color: #92400e; font-size: 1.1rem;">⚠️ የላይቭ ፕሮጀክቶች መክፈቻ መመሪያ (How to Open Demo Links):</h3>
+            <p style="margin-bottom: 10px; font-size: 0.95rem;">
+                የኢንፊኒቲፍሪ ሊንኮችን ሲከፍቱ የ "Dangerous Site" ማስጠንቀቂያ ገጽ ከቀረበ የሚከተሉትን ደረጃዎች ይከተሉ፦
+            </p>
+            
+            <div class="steps-container">
+                <div class="step-pill">1️⃣ <b>Details</b> የሚለውን ይጫኑ</div>
+                <span class="step-arrow">➔</span>
+                <div class="step-pill">2️⃣ <b>Proceed / Visit this unsafe site</b> የሚለውን ይጫኑ</div>
+            </div>
         </div>
 
         <!-- Quick Overview Grid -->
